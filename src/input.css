@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .cardText {
+        @apply p-3 bg-sky-900 text-white rounded-b-lg;
+    }
+}
+
+@layer components {
+    .btnCategory {
+        @apply bg-sky-900 hover:bg-sky-700 active:bg-sky-900;
+    }
+}
+
+@layer components {
+    .btnNum {
+        @apply col-span-1 row-span-1 bg-sky-800 rounded-lg text-white px-8 py-5 flex justify-center items-center md:text-3xl hover:bg-sky-600 active:bg-sky-900;
+    }
+}
+
+@layer components {
+    .btnOpt {
+        @apply col-span-1 row-span-1 rounded-lg px-5 md:text-2xl bg-sky-800 hover:bg-sky-600 active:bg-sky-900 text-white flex justify-center items-center;
+    }
+}
+
+@layer components {
+    .btnPrint {
+        @apply bg-sky-800 hover:bg-sky-600 active:bg-sky-900 py-3 px-6 rounded-lg flex text-2xl justify-center items-center sm:max-xl:w-full xl:w-full;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply mx-2 p-2 text-white rounded-lg;
+    }
+}
+
+@layer components {
+    .card {
+        @apply text-black bg-white rounded-lg;
+    }
+}
+
+@layer components {
+    .h-boxCard {
+        height: 768px;
+    }
+}
+
+@layer components {
+    body {
+        font-family: 'Poppins';
+    }
+}

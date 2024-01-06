@@ -1,0 +1,558 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SellEase</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body style="width: 100vw; height: 100vh;">
+  <!-- Header start -->
+  <header class="w-full bg-sky-900 justify-between items-center text-white py-2 text-lg flex pe-4">
+    <!-- Back Button start -->
+    <button class="btn bg-red-600 ms-4 hover:bg-red-500 active:bg-red-700">
+      <a href="#" class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+        <p class="ps-2">Indietro</p>
+      </a>
+    </button>
+    <!-- Back Button end -->
+    <p>SellEase - Gestionale</p>
+    <div class="w-20"></div>
+  </header>
+  <!-- Header end -->
+  <!-- Container -->
+  <div class="w-full flex p-5 gap-5">
+    <!-- Left Div Start -->
+    <div class="flex flex-col gap-6 sm:max-xl:w-6/12 w-8/12">
+      <!-- Category Start -->
+      <div class="bg-sky-300 flex text-white rounded-lg">
+        <!-- Prev Button Start -->
+        <button class="px-4 py-2 bg-sky-900 hover:bg-sky-700 text-white rounded-l-md focus:outline-none"
+          id="buttonPrev">
+          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 500 960" width="24">
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+          </svg>
+        </button>
+        <!-- Prev Button End -->
+        <div class="py-4 whitespace-nowrap overflow-x-hidden" id="boxScroll">
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+          <button class="btn btnCategory">
+            <a href="#" class="flex items-center">
+              Categoria
+            </a>
+          </button>
+        </div>
+        <!-- Next Button Start -->
+        <button class="px-4 py-2 bg-sky-900 hover:bg-sky-700 text-white rounded-r-md focus:outline-none"
+          id="buttonNext">
+          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+          </svg>
+        </button>
+        <!-- Next Button End -->
+      </div>
+      <!-- Category End -->
+      <div class="bg-sky-300 flex justify-between rounded-lg h-prn h-boxCard">
+        <!-- Container Card Start -->
+        <div class="grid md:max-xl:grid-cols-3 grid-cols-4 gap-4 p-3 w-full justify-evenly rounded-l overflow-y-scroll">
+          <!-- Card 1 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText" >Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="p-3 bg-sky-900 text-white rounded-b-lg">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                aq
+              </svg>
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 4 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 5 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 6 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 7 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 8 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 9 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 10 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 11 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 12 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 13 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 14 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 15 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 16 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 17 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 18 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 19 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+          <!-- Card 20 -->
+          <a href="#">
+            <div class="card flex flex-col-reverse text-center">
+              <div class="cardText">Nome Prodotto</div>
+              <svg class="mx-auto my-10" xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <path opacity="1" fill="#1E3050"
+                  d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="bg-violet-400 flex flex-col justify-between rounded-lg">
+          <button class="px-4 py-2 bg-sky-500 text-white rounded-r-md focus:outline-none">
+            <svg class="fill-white rotate-90" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 500 960" width="24">
+              <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"></path>
+            </svg>
+          </button>
+          <button class="px-4 py-2 bg-sky-500 text-white rounded-r-md focus:outline-none">
+            <svg class="fill-white -rotate-90" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 500 960" width="24">
+              <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"></path>
+            </svg>
+          </button>
+        </div> -->
+      </div>
+    </div>
+    <!-- Left Div End -->
+    <!-- Right Div Start -->
+    <div class="rounded-lg bg-white w-auto end-0">
+      <div class="bg-sky-300 rounded-lg py-1">
+        <div>
+          <!-- Display Div -->
+          <div class="bg-white rounded-lg flex justify-between p-2 m-2">
+            <p>Elemento</p>
+            <p>Prezzo</p>
+          </div>
+          <!-- List Div -->
+          <div class="m-2">
+            <div class="p-2 rounded-t-lg bg-sky-900 text-white flex justify-between">
+              <p>Quantità</p>
+              <p>Descrizione</p>
+              <p>Importo</p>
+            </div>
+            <div class="bg-white text-dark justify-between h-32 overflow-y-scroll">
+              <div class="px-2 py-1 flex justify-between lin border-b-2 border-sky-400">
+                <p class=>Quantità</p>
+                <p>Descrizione</p>
+                <p>Importo</p>
+              </div>
+              <div class="px-2 py-1 flex justify-between border-b-2 border-sky-400">
+                <p>Quantità</p>
+                <p>Descrizione</p>
+                <p>Importo</p>
+              </div>
+              <div class="px-2 py-1 flex justify-between lin border-b-2 border-sky-400">
+                <p class=>Quantità</p>
+                <p>Descrizione</p>
+                <p>Importo</p>
+              </div>
+              <div class="px-2 py-1 flex justify-between border-b-2 border-sky-400">
+                <p>Quantità</p>
+                <p>Descrizione</p>
+                <p>Importo</p>
+              </div>
+              <div class="px-2 py-1 flex justify-between lin border-b-2 border-sky-400">
+                <p class=>Quantità</p>
+                <p>Descrizione</p>
+                <p>Importo</p>
+              </div>
+              <div class="px-2 py-1 flex justify-between border-b-2 border-sky-400">
+                <p>Quantità</p>
+                <p>Descrizione</p>
+                <p>Importo</p>
+              </div>
+            </div>
+            <div class="p-2 rounded-b-lg bg-sky-900 text-white flex justify-between">
+              <p>Quantità tot.</p>
+              <p>Importo tot.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 grid-rows-1 bg-sky-300 p-2 mt-2 rounded-lg gap-3">
+        <div class="col-span-1 row-span-1 text-white">
+          <a href="#">
+            <button
+              class="bg-red-600 hover:bg-red-500 active:bg-red-700 py-3 px-5 rounded-lg flex text-2xl justify-center items-center w-full">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960"
+                width="60">
+                <path
+                  d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z" />
+              </svg>Elimina</button>
+          </a>
+        </div>
+        <div class="col-span-1 row-span-1">
+          <div class="bg-sky-900 hover:bg-sky-600 rounded-lg text-white p-2">
+            <p>Listino</p>
+          </div>
+          <div class="mt-1"><a href="#">
+              <select name="" id="" class="p-2 bg-sky-900 hover:bg-sky-600 rounded-lg text-white w-full">
+                <option value="0">----</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </a></div>
+        </div>
+      </div>
+      <!-- Calc Start -->
+      <div class="mt-2 rounded-lg flex justify-between gap-3">
+        <div class="bg-sky-300 rounded-lg p-3">
+          <div class="grid grid-cols-3 grid-rows-4 gap-3">
+            <button
+              class="btnNum">7</button>
+            <button
+              class="btnNum">8</button>
+            <button
+              class="btnNum">9</button>
+            <button
+              class="btnNum">4</button>
+            <button
+              class="btnNum">5</button>
+            <button
+              class="btnNum">6</button>
+            <button
+              class="btnNum">1</button>
+            <button
+              class="btnNum">2</button>
+            <button
+              class="btnNum">3</button>
+            <button
+              class="btnNum">0</button>
+            <button
+              class="btnNum">,</button>
+            <button
+              class="btnNum bg-red-600 hover:bg-red-500 active:bg-red-700">CL</button>
+          </div>
+        </div>
+        <div class="bg-sky-300 rounded-lg grid grid-cols-2 grid-rows-4 gap-3 p-3">
+          <button
+            class="btnOpt">Reso</button>
+          <button
+            class="btnOpt">R1</button>
+          <button
+            class="btnOpt">X</button>
+          <button
+            class="btnOpt">R2</button>
+          <button
+            class="btnOpt">-%</button>
+          <button
+            class="btnOpt">R3</button>
+          <button
+            class="btnOpt bg-green-600 hover:bg-green-500 active:bg-green-700">OK</button>
+          <button
+            class="btnOpt">R4</button>
+        </div>
+      </div>
+      <!-- Calc End -->
+      <!-- Options Start -->
+      <div class="grid grid-cols-2 grid-rows-1 bg-sky-300 py-4 px-3 mt-2 rounded-lg sm:max-xl:gap-3 gap-3">
+        <div class="col-span-1 row-span-1 text-white">
+          <a href="#">
+            <button
+              class="btnPrint">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
+                width="40">
+                <path
+                  d="M200-200h360v-200h200v-360H200v560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v400L600-120H200Zm80-280v-80h200v80H280Zm0-160v-80h400v80H280Zm-80 360v-560 560Z" />
+              </svg>
+              Scontrino
+            </button>
+          </a>
+        </div>
+        <div class="col-span-1 row-span-1 text-white">
+          <a href="#">
+            <button
+              class="btnPrint">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
+                width="40">
+                <path
+                  d="M640-640v-120H320v120h-80v-200h480v200h-80Zm-480 80h640-640Zm560 100q17 0 28.5-11.5T760-500q0-17-11.5-28.5T720-540q-17 0-28.5 11.5T680-500q0 17 11.5 28.5T720-460Zm-80 260v-160H320v160h320Zm80 80H240v-160H80v-240q0-51 35-85.5t85-34.5h560q51 0 85.5 34.5T880-520v240H720v160Zm80-240v-160q0-17-11.5-28.5T760-560H200q-17 0-28.5 11.5T160-520v160h80v-80h480v80h80Z" />
+              </svg>
+              Preconto
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Options End -->
+    </div>
+    <!-- Right Div End -->
+  </div>
+  <!-- Container End -->
+  <script src="script.js"></script>
+</body>
+
+</html>
