@@ -701,6 +701,10 @@ body {
   font-family: 'Poppins';
 }
 
+.h-modal {
+  height: 796px;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -802,10 +806,6 @@ body {
 
 .h-5{
   height: 1.25rem;
-}
-
-.h-5\/6{
-  height: 83.333333%;
 }
 
 .h-screen{

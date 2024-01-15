@@ -58,6 +58,11 @@
         font-family: 'Poppins';
     }
 }
+@layer components {
+    .h-modal {
+        height: 796px;
+    }
+}
 
 @layer components {
     ::-webkit-scrollbar {
