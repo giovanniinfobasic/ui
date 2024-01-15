@@ -12,9 +12,9 @@
       }
 
       .cls-2 {
-        fill: #f3c975;
-        stroke: #999;
-        stroke-width: .75px;
+        fill: #afafaf;
+        stroke: #f3c975;
+        stroke-width: 5.52px;
       }
 
       .cls-2, .cls-3 {
@@ -22,16 +22,16 @@
       }
 
       .cls-3 {
-        fill: #afafaf;
-        stroke: #f3c975;
-        stroke-width: 5.52px;
+        fill: #f3c975;
+        stroke: #999;
+        stroke-width: .75px;
       }
     </style>
   </defs>
-  <circle class="cls-3" cx="55.75" cy="30" r="25.75"/>
-  <text class="cls-1" transform="translate(40.85 38.85)"><tspan x="0" y="0">1</tspan></text>
-  <line class="cls-2" x1="63" y1="8" x2="63" y2="52"/>
-  <line class="cls-2" x1="68" y1="11" x2="68" y2="49"/>
-  <line class="cls-2" x1="72" y1="14" x2="72" y2="46"/>
-  <line class="cls-2" x1="75" y1="17" x2="75" y2="44"/>
+  <circle class="cls-2" cx="53" cy="30" r="25.75"/>
+  <text class="cls-1" transform="translate(38.1 38.85)"><tspan x="0" y="0">1</tspan></text>
+  <line class="cls-3" x1="60.25" y1="8" x2="60.25" y2="52"/>
+  <line class="cls-3" x1="65.25" y1="11" x2="65.25" y2="49"/>
+  <line class="cls-3" x1="69.25" y1="14" x2="69.25" y2="46"/>
+  <line class="cls-3" x1="72.25" y1="17" x2="72.25" y2="44"/>
 </svg>

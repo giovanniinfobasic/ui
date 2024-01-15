@@ -18,10 +18,10 @@
       }
     </style>
   </defs>
-  <circle class="cls-3" cx="53.75" cy="30" r="25.75"/>
-  <text class="cls-1" transform="translate(38.85 38.85)"><tspan x="0" y="0">5</tspan></text>
-  <line class="cls-2" x1="75.31" y1="20.2" x2="44.2" y2="51.31"/>
-  <line class="cls-2" x1="76.73" y1="25.86" x2="49.86" y2="52.73"/>
-  <line class="cls-2" x1="77.44" y1="30.81" x2="54.81" y2="53.44"/>
-  <line class="cls-2" x1="77.44" y1="35.05" x2="58.34" y2="54.14"/>
+  <circle class="cls-3" cx="53" cy="30" r="25.75"/>
+  <text class="cls-1" transform="translate(38.1 38.85)"><tspan x="0" y="0">2</tspan></text>
+  <line class="cls-2" x1="74.56" y1="20.2" x2="43.45" y2="51.31"/>
+  <line class="cls-2" x1="75.98" y1="25.86" x2="49.11" y2="52.73"/>
+  <line class="cls-2" x1="76.69" y1="30.81" x2="54.06" y2="53.44"/>
+  <line class="cls-2" x1="76.69" y1="35.05" x2="57.59" y2="54.14"/>
 </svg>

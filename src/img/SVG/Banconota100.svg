@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        fill: #67a750;
+      }
+
+      .cls-4 {
+        fill: #67b54f;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #d2feaf;
+      }
+
+      .cls-7 {
+        fill: #3557b8;
+      }
+
+      .cls-8 {
+        fill: #549141;
+      }
+
+      .cls-9 {
+        font-size: 12px;
+      }
+
+      .cls-9, .cls-10 {
+        fill: #20550b;
+        font-family: AcuminConcept-Light, 'Acumin Variable Concept';
+        font-variation-settings: 'wght' 300, 'wdth' 100, 'slnt' 0;
+        font-weight: 300;
+      }
+
+      .cls-10 {
+        font-size: 21px;
+      }
+
+      .cls-11 {
+        fill: #96cb71;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" x="0" y="0" width="106" height="60"/>
+  <rect class="cls-11" x="34" y="0" width="68" height="60"/>
+  <rect class="cls-3" x="1" y="2" width="6" height="5"/>
+  <rect class="cls-7" x="9" y="2" width="7" height="5"/>
+  <rect class="cls-7" x="93" y="40" width="7" height="7"/>
+  <rect class="cls-8" x="51" y="22" width="36" height="34"/>
+  <rect class="cls-4" x="68" y="0" width="17" height="22"/>
+  <text class="cls-10" transform="translate(66.84 17.68)"><tspan class="cls-12" x="0" y="0">1</tspan><tspan class="cls-5" x="7.5" y="0">0</tspan><tspan x="19.05" y="0">0</tspan></text>
+  <rect class="cls-3" x="21" y="52" width="30" height="4"/>
+  <rect class="cls-3" x="21" y="47" width="5" height="4"/>
+  <g>
+    <polygon class="cls-1" points="56.98 55.48 55.74 52.96 52.96 52.55 54.97 50.59 54.49 47.83 56.98 49.13 59.46 47.83 58.99 50.59 61 52.55 58.22 52.96 56.98 55.48"/>
+    <g>
+      <polygon class="cls-1" points="45.98 6.83 47.22 9.34 50 9.75 47.99 11.71 48.46 14.48 45.98 13.17 43.49 14.48 43.97 11.71 41.96 9.75 44.74 9.34 45.98 6.83"/>
+      <polygon class="cls-1" points="56.98 9.83 58.22 12.34 61 12.75 58.99 14.71 59.46 17.48 56.98 16.17 54.49 17.48 54.97 14.71 52.96 12.75 55.74 12.34 56.98 9.83"/>
+      <polygon class="cls-1" points="34.98 9.83 36.22 12.34 39 12.75 36.99 14.71 37.46 17.48 34.98 16.17 32.49 17.48 32.97 14.71 30.96 12.75 33.74 12.34 34.98 9.83"/>
+      <polygon class="cls-1" points="45.98 58.48 44.74 55.96 41.96 55.55 43.97 53.59 43.49 50.83 45.98 52.13 48.46 50.83 47.99 53.59 50 55.55 47.22 55.96 45.98 58.48"/>
+      <polygon class="cls-1" points="34.98 55.48 33.74 52.96 30.96 52.55 32.97 50.59 32.49 47.83 34.98 49.13 37.46 47.83 36.99 50.59 39 52.55 36.22 52.96 34.98 55.48"/>
+      <polygon class="cls-1" points="19.65 33.15 22.17 31.91 22.57 29.13 24.54 31.14 27.3 30.66 26 33.15 27.3 35.64 24.54 35.16 22.57 37.17 22.17 34.39 19.65 33.15"/>
+      <polygon class="cls-1" points="22.65 22.15 25.17 20.91 25.57 18.13 27.54 20.14 30.3 19.66 29 22.15 30.3 24.64 27.54 24.16 25.57 26.17 25.17 23.39 22.65 22.15"/>
+      <polygon class="cls-1" points="22.65 44.15 25.17 42.91 25.57 40.13 27.54 42.14 30.3 41.66 29 44.15 30.3 46.64 27.54 46.16 25.57 48.17 25.17 45.39 22.65 44.15"/>
+      <polygon class="cls-1" points="71.3 33.15 68.78 34.39 68.38 37.17 66.42 35.16 63.65 35.64 64.96 33.15 63.65 30.66 66.42 31.14 68.38 29.13 68.78 31.91 71.3 33.15"/>
+      <polygon class="cls-1" points="68.3 44.15 65.78 45.39 65.38 48.17 63.42 46.16 60.65 46.64 61.96 44.15 60.65 41.66 63.42 42.14 65.38 40.13 65.78 42.91 68.3 44.15"/>
+      <polygon class="cls-1" points="68.3 22.15 65.78 23.39 65.38 26.17 63.42 24.16 60.65 24.64 61.96 22.15 60.65 19.66 63.42 20.14 65.38 18.13 65.78 20.91 68.3 22.15"/>
+    </g>
+  </g>
+  <text class="cls-9" transform="translate(1.84 54.68)"><tspan class="cls-2" x="0" y="0">1</tspan><tspan class="cls-13" x="4.28" y="0">0</tspan><tspan x="10.88" y="0">0</tspan></text>
+</svg>
