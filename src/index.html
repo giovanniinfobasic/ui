@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SellEase</title>
+    <!-- Css -->
     <link href="../assets/css/output.css" rel="stylesheet">
     <link href="../src/output.css" rel="stylesheet">
 </head>
@@ -130,7 +131,8 @@
             <!-- Category End -->
             <div class="bg-sky-300 flex justify-between rounded-lg h-prn h-boxCard">
                 <!-- Container Card Start -->
-                <div class="grid md:max-xl:grid-cols-3 grid-cols-4 gap-4 p-3 w-full justify-evenly rounded-l overflow-y-scroll">
+                <div
+                    class="grid md:max-xl:grid-cols-3 grid-cols-4 gap-4 p-3 w-full justify-evenly rounded-l overflow-y-scroll">
                     <!-- Card 1 -->
                     <a href="#">
                         <div class="card flex flex-col-reverse text-center">
@@ -517,7 +519,8 @@
             <!-- Options Start -->
             <div class="grid grid-cols-1 grid-rows-1 bg-sky-300 py-3 px-3 mt-2 rounded-lg sm:max-xl:gap-3 gap-3">
                 <div class="col-span-1 row-span-1 text-white">
-                    <button class="btnPrint" type="button" id="modalBtn">
+                    <button class="btnPrint" type="button" id="modalBtn" data-modal-target="modalScontrino"
+                        data-modal-toggle="modalScontrino">
                         <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
                             width="40">
                             <path
@@ -525,150 +528,103 @@
                         </svg>
                         Scontrino
                     </button>
-                    <!-- Modal Start -->
-                    <div id="modalScontrino" class="w-screen h-screen left-0 top-0 bg-stone-950 fixed bg-opacity-50 p-24 hidden">
-                        <div class="bg-white text-stone-700 rounded-lg flex h-modal">
-                            <!-- Left Div -->
-                            <div class="w-5/12 py-8 px-6 border-r-2 border-gray-200 overflow-y-auto">
-                                <div class="text-center">
-                                    <!-- Title -->
-                                    <p class="text-4xl font-bold mt-10">SellEase</p>
-                                    <!-- Info List -->
-                                    <div class="mx-auto w-auto mt-6">
-                                        <ul class="text-center">
-                                            <li>p.iva xxxxxxx</li>
-                                            <li>via esempio , 82</li>
-                                            <li>67094 Palermo (PA)</li>
-                                            <li>Tel. 0863977587</li>
-                                        </ul>
+                    <!-- Modal Scontrino -->
+                    <div id="modalScontrino" tabindex="-1" aria-hidden="true"
+                        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%)] max-h-full">
+                        <div class="relative w-full max-h-full">
+                            <!-- Modal content -->
+                            <div class="bg-white rounded-lg w-auto">
+                                <div class="w-5/12 p-4 text-gray-800 overflow-y-auto border-r-2 border-gray-200">
+                                    <div class="overflow-y-auto">
+                                        <div class="text-center">
+                                            <!-- Title -->
+                                            <p class="text-4xl font-bold mt-10">SellEase</p>
+                                            <!-- Info List -->
+                                            <div class="mx-auto w-auto mt-6">
+                                                <ul class="text-center">
+                                                    <li>p.iva xxxxxxx</li>
+                                                    <li>via esempio , 82</li>
+                                                    <li>67094 Palermo (PA)</li>
+                                                    <li>Tel. 0863977587</li>
+                                                </ul>
+                                            </div>
+                                            <p class="my-8 text-xl lg:text-3xl xl:text-4xl">*******************</p>
+                                            <p class="mb-20 text-xl"><span class="uppercase">documento commerciale</span> <br>
+                                                di vendita o prestazione</p>
+                                        </div>
+                                        <!-- Products & Description -->
+                                        <div class="w-auto mx-auto">
+                                            <div class="flex justify-between">
+                                                <p>Descrizione</p>
+                                                <p>Prezzo(&euro;) <span class="uppercase">iva</span></p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Prodotto</p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Prodotto</p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Prodotto</p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p class="text-xl uppercase font-bold">totale complessivo</p>
+                                                <p class="font-bold">Costo totale</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Resto</p>
+                                                <p>...</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Non riscosso</p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Di cui <span class="uppercase">iva</span></p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Pagamento contante</p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Pagamento elettronico</p>
+                                                <p>Costo</p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Importo pagato</p>
+                                                <p>... </p>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <p>Data</p>
+                                                <p>xx/xx/xxxx</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="my-8 text-xl lg:text-3xl xl:text-4xl">*******************</p>
-                                    <p class="mb-20 text-xl"><span class="uppercase">documento commerciale</span> <br>
-                                        di vendita o prestazione</p>
                                 </div>
-                                <!-- Products & Description -->
-                                <div class="w-auto mx-auto">
-                                    <div class="flex justify-between">
-                                        <p>Descrizione</p>
-                                        <p>Prezzo(&euro;) <span class="uppercase">iva</span></p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Prodotto</p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Prodotto</p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Prodotto</p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p class="text-xl uppercase font-bold">totale complessivo</p>
-                                        <p class="font-bold">Costo totale</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Resto</p>
-                                        <p>...</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Non riscosso</p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Di cui <span class="uppercase">iva</span></p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Pagamento contante</p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Pagamento elettronico</p>
-                                        <p>Costo</p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Importo pagato</p>
-                                        <p>... </p>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <p>Data</p>
-                                        <p>xx/xx/xxxx</p>
-                                    </div>
+                                <div class="w-3/12 p-4">
+
                                 </div>
-                            </div>
-                            <!-- Right Div -->
-                            <div class="w-7/12 p-6 overflow-y-auto">
-                                <div class="w-full flex justify-end">
-                                    <button type="button" id="modalBtnClose" class="bg-red-600 hover:bg-red-500 active:bg-red-700 rounded-lg p-1"><svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
-                                </div>
-                                <div>
-                                    
-                                </div>
-                                <div class="flex flex-wrap">
-                                    <!-- Banconote -->
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota5.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota10.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota20.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota50.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota100.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota200.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                        <img src="img/SVG/Banconota500.svg" width="150px"></img>
-                                    </div>
-                                    <!-- Monete -->
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta2.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta1.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta50cent.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta20cent.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta10cent.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta5cent.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta2cent.svg" width="150px"></img>
-                                    </div>
-                                    <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                        <img src="img/SVG/Moneta1cent.svg" width="150px"></img>
-                                    </div>
+                                <div class="w-2/12 p-4">
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Modal End -->
                 </div>
             </div>
-
         </div>
-        <!-- Options End -->
+
+    </div>
+    <!-- Options End -->
     </div>
     <!-- Right Div End -->
     </div>
     <!-- Container End -->
-    <script src="modal.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 </html>
