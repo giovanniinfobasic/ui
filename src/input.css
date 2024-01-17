@@ -34,6 +34,11 @@
         @apply bg-sky-800 hover:bg-sky-600 active:bg-sky-900 py-3 px-6 rounded-lg flex text-2xl justify-center items-center sm:max-xl:w-full xl:w-full;
     }
 }
+@layer components {
+    .btnPos {
+        @apply text-white bg-sky-800 hover:bg-sky-600 active:bg-sky-900 flex justify-center items-center p-4 rounded-lg;
+    }
+}
 
 @layer components {
     .btn {
