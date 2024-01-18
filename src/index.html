@@ -449,7 +449,7 @@
                 </div>
                 <div class="col-span-1 row-span-1">
                     <select name="listino" id="listino"
-                        class="p-2 bg-sky-900 hover:bg-sky-600 rounded-lg text-white w-full">
+                        class="p-2 bg-sky-900 hover:bg-sky-600 rounded-lg text-white w-full focus:outline-none">
                         <option value="0">Listino 1</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -519,8 +519,7 @@
             <!-- Options Start -->
             <div class="grid grid-cols-1 grid-rows-1 bg-sky-300 py-3 px-3 mt-2 rounded-lg sm:max-xl:gap-3 gap-3">
                 <div class="col-span-1 row-span-1 text-white">
-                    <button class="btnPrint" type="button" id="modalBtn" data-modal-target="modalScontrino"
-                        data-modal-toggle="modalScontrino">
+                    <button class="btnPrint" type="button" id="btnOpen">
                         <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
                             width="40">
                             <path
@@ -528,174 +527,6 @@
                         </svg>
                         Scontrino
                     </button>
-                    <!-- Modal Scontrino -->
-                    <div id="modalScontrino" tabindex="-1" aria-hidden="true"
-                        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%)] max-h-full">
-                        <div class="relative w-full max-h-full">
-                            <!-- Modal content -->
-                            <div class="bg-white rounded-lg w-auto flex">
-                                <div class="w-5/12 p-4 text-gray-800 overflow-y-auto border-r-2 border-gray-200">
-                                    <div class="overflow-y-auto">
-                                        <div class="text-center">
-                                            <!-- Title -->
-                                            <p class="text-4xl font-bold mt-10">SellEase</p>
-                                            <!-- Info List -->
-                                            <div class="mx-auto w-auto mt-6">
-                                                <ul class="text-center">
-                                                    <li>p.iva xxxxxxx</li>
-                                                    <li>via esempio , 82</li>
-                                                    <li>67094 Palermo (PA)</li>
-                                                    <li>Tel. 0863977587</li>
-                                                </ul>
-                                            </div>
-                                            <p class="my-8 text-xl lg:text-3xl xl:text-4xl">*******************</p>
-                                            <p class="mb-20 text-xl"><span class="uppercase">documento commerciale</span> <br>
-                                                di vendita o prestazione</p>
-                                        </div>
-                                        <!-- Products & Description -->
-                                        <div class="w-auto mx-auto">
-                                            <div class="flex justify-between">
-                                                <p>Descrizione</p>
-                                                <p>Prezzo(&euro;) <span class="uppercase">iva</span></p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Prodotto</p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Prodotto</p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Prodotto</p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p class="text-xl uppercase font-bold">totale complessivo</p>
-                                                <p class="font-bold">Costo totale</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Resto</p>
-                                                <p>...</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Non riscosso</p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Di cui <span class="uppercase">iva</span></p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Pagamento contante</p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Pagamento elettronico</p>
-                                                <p>Costo</p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Importo pagato</p>
-                                                <p>... </p>
-                                            </div>
-                                            <div class="flex justify-between">
-                                                <p>Data</p>
-                                                <p>xx/xx/xxxx</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-3/12 p-4 border-r-2 border-gray-200">
-                                    <p class="text-gray-800">Metodi di pagamento</p>
-                                    <div class="w-auto flex gap-3 flex-wrap mt-3">
-                                        <button class="border border-stone-800 p-2 rounded-lg text-stone-800 focus:text-white focus:bg-sky-300">
-                                            Assegno
-                                        </button>
-                                        <button class="border border-stone-800 p-2 rounded-lg text-stone-800 focus:text-white focus:bg-sky-300">
-                                            Elettronico
-                                        </button>
-                                    </div>
-                                    <div class="mt-5">
-                                        <p class="text-gray-800">Contanti</p>
-                                        <div class="flex flex-wrap">
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                                <img src="img/SVG/Banconota5.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                                <img src="img/SVG/Banconota10.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                                <img src="img/SVG/Banconota20.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
-                                                <img src="img/SVG/Banconota50.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                                <img src="img/SVG/Moneta2.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                                <img src="img/SVG/Moneta1.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                                <img src="img/SVG/Moneta50cent.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                                <img src="img/SVG/Moneta20cent.svg" width="120px"></img>
-                                            </div>
-                                            <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
-                                                <img src="img/SVG/Moneta10cent.svg" width="120px"></img>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="mt-5 w-72 mx-auto">
-                                        <div>
-                                            <p class="text-gray-800">Totale contanti</p>
-                                            <input type="text" class="px-2 border-b border-stone-800 focus:outline-0 rounded-lg w-full mb-3" readonly>
-                                        </div>
-                                        <div class="grid grid-cols-3 grid-rows-4 gap-3 bg-sky-300 rounded-lg p-3">
-                                            <button class="btnPos">
-                                                7
-                                            </button>
-                                            <button class="btnPos">
-                                                8
-                                            </button>
-                                            <button class="btnPos">
-                                                9
-                                            </button>
-                                            <button class="btnPos">
-                                                4
-                                            </button>
-                                            <button class="btnPos">
-                                                5
-                                            </button>
-                                            <button class="btnPos">
-                                                6
-                                            </button>
-                                            <button class="btnPos">
-                                                3
-                                            </button>
-                                            <button class="btnPos">
-                                                2
-                                            </button>
-                                            <button class="btnPos">
-                                                1
-                                            </button>
-                                            <button class="btnPos col-span-2">
-                                                0
-                                            </button>
-                                            <button class="btnPos">
-                                                .
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-2/12 p-4">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -706,7 +537,229 @@
     <!-- Right Div End -->
     </div>
     <!-- Container End -->
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- Modal Scontrino -->
+    <div id="modalScontrino"
+        class="bg-stone-950 bg-opacity-50 w-full h-full fixed top-0 left-0 h-modal p-20 flex items-center hidden">
+        <div class="bg-white rounded-lg w-full p-4 flex">
+            <div class="w-4/12 p-4 text-gray-800 overflow-y-auto border-r-2 border-gray-200">
+                <div class="overflow-y-auto">
+                    <div class="text-center">
+                        <!-- Title -->
+                        <p class="text-4xl font-bold mt-10">SellEase</p>
+                        <!-- Info List -->
+                        <div class="mx-auto w-auto mt-6">
+                            <ul class="text-center">
+                                <li>p.iva xxxxxxx</li>
+                                <li>via esempio , 82</li>
+                                <li>67094 Palermo (PA)</li>
+                                <li>Tel. 0863977587</li>
+                            </ul>
+                        </div>
+                        <p class="my-8 text-xl lg:text-3xl xl:text-4xl">*******************</p>
+                        <p class="mb-20 text-xl"><span class="uppercase">documento
+                                commerciale</span> <br>
+                            di vendita o prestazione</p>
+                    </div>
+                    <!-- Products & Description -->
+                    <div class="w-auto mx-auto">
+                        <div class="flex justify-between">
+                            <p>Descrizione</p>
+                            <p>Prezzo(&euro;) <span class="uppercase">iva</span></p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Prodotto</p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Prodotto</p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Prodotto</p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="text-xl uppercase font-bold">totale complessivo</p>
+                            <p class="font-bold">Costo totale</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Resto</p>
+                            <p>...</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Non riscosso</p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Di cui <span class="uppercase">iva</span></p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Pagamento contante</p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Pagamento elettronico</p>
+                            <p>Costo</p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Importo pagato</p>
+                            <p>... </p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Data</p>
+                            <p>xx/xx/xxxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-4/12 p-4 border-r-2 border-gray-200 overflow-y-auto text-center">
+                <p class="text-gray-800">Metodi di pagamento</p>
+                <div class="w-auto flex gap-3 flex-wrap justify-center mt-3">
+                    <button
+                        class="border border-stone-800 p-2 rounded-lg text-stone-800 focus:text-white focus:bg-sky-300">
+                        Assegno
+                    </button>
+                    <button
+                        class="border border-stone-800 p-2 rounded-lg text-stone-800 focus:text-white focus:bg-sky-300">
+                        Elettronico
+                    </button>
+                </div>
+                <div class="mt-5">
+                    <p class="text-gray-800">Contanti</p>
+                    <div class="flex flex-wrap">
+                        <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
+                            <img src="img/SVG/Banconota5.svg" width="118px"></img>
+                        </div>
+                        <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
+                            <img src="img/SVG/Banconota10.svg" width="118px"></img>
+                        </div>
+                        <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
+                            <img src="img/SVG/Banconota20.svg" width="118px"></img>
+                        </div>
+                        <div class="p-2 hover:bg-white hover:opacity-80 cursor-pointer">
+                            <img src="img/SVG/Banconota50.svg" width="118px"></img>
+                        </div>
+                        <div
+                            class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
+                            <img src="img/SVG/Moneta2.svg" width="118px"></img>
+                        </div>
+                        <div
+                            class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
+                            <img src="img/SVG/Moneta1.svg" width="118px"></img>
+                        </div>
+                        <div
+                            class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
+                            <img src="img/SVG/Moneta50cent.svg" width="118px"></img>
+                        </div>
+                        <div
+                            class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
+                            <img src="img/SVG/Moneta20cent.svg" width="118px"></img>
+                        </div>
+                        <div
+                            class="p-2 hover:bg-white hover:opacity-80 cursor-pointer flex items-center justify-center">
+                            <img src="img/SVG/Moneta10cent.svg" width="118px"></img>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mt-5 w-72 mx-auto">
+                    <div>
+                        <p class="text-gray-800">Totale contanti</p>
+                        <input type="text" class="p-2 border-b border-stone-800 focus:outline-0 w-full mb-3 text-xl">
+                    </div>
+                    <div class="grid grid-cols-3 grid-rows-4 gap-3 bg-sky-300 rounded-lg p-3">
+                        <button class="btnPos">
+                            7
+                        </button>
+                        <button class="btnPos">
+                            8
+                        </button>
+                        <button class="btnPos">
+                            9
+                        </button>
+                        <button class="btnPos">
+                            4
+                        </button>
+                        <button class="btnPos">
+                            5
+                        </button>
+                        <button class="btnPos">
+                            6
+                        </button>
+                        <button class="btnPos">
+                            3
+                        </button>
+                        <button class="btnPos">
+                            2
+                        </button>
+                        <button class="btnPos">
+                            1
+                        </button>
+                        <button class="btnPos col-span-2">
+                            0
+                        </button>
+                        <button class="btnPos">
+                            .
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-4/12 p-4 flex flex-col justify-between overflow-y-auto text-white">
+                <div class="flex justify-end">
+                    <button class="rounded-lg p-2 bg-red-600 hover:bg-red-500 active:bg-red-700" id="btnClose">
+                        <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                            width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="w-80 flex justify-center mb-5 mx-auto">
+                    <div>
+                        <p class="text-gray-800 mb-3">Inserisci sconto</p>
+                        <div class="text-center flex flex-wrap">
+                            <input type="text" class="p-2 border border-stone-800 rounded-lg focus:outline-0">
+                            <div class="px-2">
+                                <button class="btnPrint bg-green-600 hover:bg-green-500 active:bg-green-700" type="button"
+                                    id="modalBtn" data-modal-target="modalScontrino" data-modal-toggle="modalScontrino">
+                                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="btnPrint bg-red-600 hover:bg-red-500 active:bg-red-700" type="button" id="modalBtn"
+                        data-modal-target="modalScontrino" data-modal-toggle="modalScontrino">
+                        Non riscosso
+                    </button>
+                    <button class="btnPrint my-5" type="button" id="modalBtn" data-modal-target="modalScontrino"
+                        data-modal-toggle="modalScontrino">
+                        <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
+                            width="40">
+                            <path
+                                d="M200-200h360v-200h200v-360H200v560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v400L600-120H200Zm80-280v-80h200v80H280Zm0-160v-80h400v80H280Zm-80 360v-560 560Z" />
+                        </svg>
+                        Scontrino
+                    </button>
+                    <button class="btnPrint" type="button" id="modalBtn" data-modal-target="modalScontrino"
+                        data-modal-toggle="modalScontrino">
+                        <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960"
+                            width="40">
+                            <path
+                                d="M200-200h360v-200h200v-360H200v560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v400L600-120H200Zm80-280v-80h200v80H280Zm0-160v-80h400v80H280Zm-80 360v-560 560Z" />
+                        </svg>
+                        Preconto
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="modalScontrino.js"></script>
 </body>
 
 </html>

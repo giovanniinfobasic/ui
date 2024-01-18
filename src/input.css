@@ -36,7 +36,7 @@
 }
 @layer components {
     .btnPos {
-        @apply text-white bg-sky-800 hover:bg-sky-600 active:bg-sky-900 flex justify-center items-center p-4 rounded-lg;
+        @apply text-white bg-sky-800 hover:bg-sky-600 active:bg-sky-900 flex justify-center items-center p-4 rounded-lg text-xl;
     }
 }
 
