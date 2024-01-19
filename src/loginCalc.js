@@ -1,7 +1,7 @@
 const divArray = document.querySelectorAll('.calc');
 let currentIndex = 0;
 pin = [];
-//al click aggiunge le classi dai singoli pin
+//al click aggiunge le classi e i numeri del tastierino dall'array
 function numAdd(element) {
     if (currentIndex < divArray.length) {
         divArray[currentIndex].classList.add("h-5", "w-5", "rounded-full");
@@ -10,7 +10,7 @@ function numAdd(element) {
         console.log(pin);
     }
 }
-//al click rimuove le classi dai singoli pin
+//al click rimuove le classi e i numeri del tastierino dall'array
 function numRemove() {
     if (currentIndex > 0) {
         currentIndex--;
@@ -19,9 +19,9 @@ function numRemove() {
         console.log(pin);
     }
 }
-//al click rimuove tutte le classi dai singoli pin
+//al click rimuove tutte le classi dai singoli pin e tutti i numeri dall'array
 function removeAllNumber() {
-    let display = document.querySelectorAll('#display div');
+    const display = document.querySelectorAll('#display div');
     display.forEach(elemento => {
         // Rimuovi le classi desiderate
         elemento.classList.remove("h-5", "rounded-full");
