@@ -14,6 +14,7 @@ function removeDisplay() {
 //al click resetta i valori dei numeri in console
 function removeDisplayNum() {
     pin = [];
+    currentIndex = 0;
     console.log(pin);
 }
 //al click aggiunge le classi dai singoli pin
@@ -35,7 +36,7 @@ function removeAllNumber() {
     let display = document.querySelectorAll('#display div');
     display.forEach(elemento => {
         // Rimuovi le classi desiderate
-        elemento.classList.remove("h-5");
+        elemento.classList.remove("h-5","rounded-full");
         elemento.classList.add("h-1",);
     });
 }
