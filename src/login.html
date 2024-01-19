@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellEase</title>
+    <!-- Css -->
+    <link href="../assets/css/output.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+<body class="font-body overflow-hidden">
+    <!-- Header start -->
+    <header class="w-full bg-sky-900 justify-between items-center text-white py-2 text-lg flex pe-4">
+        <!-- Back Button start -->
+        <button class="btn bg-red-600 ms-4 hover:bg-red-500 active:bg-red-700">
+            <a href="#" class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                </svg>
+                <p class="ps-2">Esci</p>
+            </a>
+        </button>
+        <!-- Back Button end -->
+        <p>SellEase - Gestionale</p>
+        <div class="w-20"></div>
+    </header>
+    <!-- Header end -->
+    <!-- Div Content -->
+    <div class="w-80 mx-auto mt-32">
+        <div>
+            <p class="text-gray-800 text-4xl text-center">Accedi</p>
+            <p class="text-gray-800 text-lg mt-5">Scegli un utente ed inserisci un pin per proseguire.</p>
+            <select name="Users" id="Users"
+                class="text-gray-800 border-stone-800 border py-2 w-full mt-10 rounded-lg px-2 focus:outline-0">
+                <option value="User1">User1</option>
+                <option value="User2">User2</option>
+                <option value="User3">User3</option>
+                <option value="User4">User4</option>
+                <option value="User5">User5</option>
+            </select>
+        </div>
+        <div class="mt-20">
+            <div class="w-full p-2 flex justify-around items-center h-20" id="display">
+                <div class="w-5 h-1 bg-stone-800 calc"></div>
+                <div class="w-5 h-1 bg-stone-800 calc"></div>
+                <div class="w-5 h-1 bg-stone-800 calc"></div>
+                <div class="w-5 h-1 bg-stone-800 calc"></div>
+            </div>
+            <div class="grid grid-cols-4 grid-rows-4 gap-3 bg-sky-300 rounded-lg p-3 mt-10">
+                <button value="7" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    7
+                </button>
+                <button value="8" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    8
+                </button>
+                <button value="9" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    9
+                </button>
+                <button class="btnPos bg-red-600 hover:bg-red-500 active:bg-red-700" onclick="removeDisplayNum(),removeAllNumber()">
+                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </button>
+                <button value="4" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    4
+                </button>
+                <button value="5" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    5
+                </button>
+                <button value="6" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    6
+                </button>
+                <button class="btnPos bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-500"  onclick="removeDisplay(),removeNumber()">
+                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28">
+                        <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+                    </svg>
+                </button>
+                <button value="1" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    1
+                </button>
+                <button value="2" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    2
+                </button>
+                <button value="3" class="btnPos" onclick="pinAdd(),addToDisplay(this)">
+                    3
+                </button>
+                <button class="btnPos bg-green-600 hover:bg-green-500 active:bg-green-700">
+                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28">
+                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                    </svg>
+                </button>
+                <button class="btnPos col-span-4" onclick="pinAdd(),addToDisplay(this)">
+                    0
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginCalc.js"></script>
+</body>
+
+</html>
