@@ -542,7 +542,7 @@
     <div id="modalScontrino"
         class="bg-stone-950 bg-opacity-50 w-full h-full fixed top-0 left-0 h-modal p-20 flex items-center hidden">
         <div class="bg-white rounded-lg w-full p-4 flex">
-            <div class="w-4/12 p-4 text-gray-800 overflow-y-auto border-r-2 border-gray-200">
+            <div class="w-6/12 p-4 text-gray-800 overflow-y-auto border-r-2 border-gray-200">
                 <div class="overflow-y-auto">
                     <div class="text-center">
                         <!-- Title -->
@@ -614,7 +614,16 @@
                     </div>
                 </div>
             </div>
-            <div class="w-4/12 p-4 border-r-2 border-gray-200 overflow-y-auto text-center">
+            <div class="w-6/12 p-4 overflow-y-auto text-center">
+                <div class="flex justify-end">
+                    <button class="rounded-lg p-2 bg-red-600 hover:bg-red-500 active:bg-red-700" id="btnClose">
+                        <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                            width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </button>
+                </div>
                 <p class="text-gray-800">Metodi di pagamento</p>
                 <div class="w-auto flex gap-3 flex-wrap justify-center mt-3">
                     <button
@@ -626,6 +635,7 @@
                         Elettronico
                     </button>
                 </div>
+                <!-- Banconote e monete -->
                 <div class="mt-5">
                     <p class="text-gray-800">Contanti</p>
                     <div class="flex flex-wrap">
@@ -664,49 +674,99 @@
                     </div>
 
                 </div>
-                <div class="mt-5 w-72 mx-auto">
-                    <div>
-                        <p class="text-gray-800">Totale contanti</p>
-                        <input type="text" class="p-2 border-b border-stone-800 focus:outline-0 w-full mb-3 text-xl">
+                <div class="flex">
+                    <div class="mt-5 w-72">
+                        <div>
+                            <p class="text-gray-800 text-start">Totale contanti</p>
+                            <input type="text"
+                                class="p-2 border-b border-stone-800 focus:outline-0 w-full mb-3 text-xl">
+                        </div>
+                        <div class="grid grid-cols-3 grid-rows-4 gap-3 bg-sky-300 rounded-lg p-3">
+                            <button class="btnPos">
+                                7
+                            </button>
+                            <button class="btnPos">
+                                8
+                            </button>
+                            <button class="btnPos">
+                                9
+                            </button>
+                            <button class="btnPos">
+                                4
+                            </button>
+                            <button class="btnPos">
+                                5
+                            </button>
+                            <button class="btnPos">
+                                6
+                            </button>
+                            <button class="btnPos">
+                                1
+                            </button>
+                            <button class="btnPos">
+                                2
+                            </button>
+                            <button class="btnPos">
+                                3
+                            </button>
+                            <button class="btnPos col-span-2">
+                                0
+                            </button>
+                            <button class="btnPos">
+                                .
+                            </button>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-3 grid-rows-4 gap-3 bg-sky-300 rounded-lg p-3">
-                        <button class="btnPos">
-                            7
-                        </button>
-                        <button class="btnPos">
-                            8
-                        </button>
-                        <button class="btnPos">
-                            9
-                        </button>
-                        <button class="btnPos">
-                            4
-                        </button>
-                        <button class="btnPos">
-                            5
-                        </button>
-                        <button class="btnPos">
-                            6
-                        </button>
-                        <button class="btnPos">
-                            1
-                        </button>
-                        <button class="btnPos">
-                            2
-                        </button>
-                        <button class="btnPos">
-                            3
-                        </button>
-                        <button class="btnPos col-span-2">
-                            0
-                        </button>
-                        <button class="btnPos">
-                            .
-                        </button>
+                    <div class="w-80 mt-5 ps-8 text-start flex flex-col justify-between">
+                        <p class="text-gray-800 mb-3">Inserisci sconto</p>
+                        <div class="text-center flex">
+                            <input type="text"
+                                class="px-2 border border-stone-800 rounded-lg focus:outline-0 text-stone-800 w-28">
+                            <select name="sconto" id="sconto"
+                                class="focus:outline-0 border border-stone-800 rounded-lg mx-2">
+                                <option value="null">--</option>
+                                <option value="percentuale">&percnt;</option>
+                                <option value="euro">&euro;</option>
+                            </select>
+                            <div>
+                                <button class="btnPrint bg-green-600 hover:bg-green-500 active:bg-green-700"
+                                    type="button" id="modalBtn" data-modal-target="modalScontrino"
+                                    data-modal-toggle="modalScontrino">
+                                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="30"
+                                        viewBox="0 -960 960 960" width="30">
+                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-white">
+                            <button class="btnPrint bg-red-600 hover:bg-red-500 active:bg-red-700" type="button"
+                                id="modalBtn" data-modal-target="modalScontrino" data-modal-toggle="modalScontrino">
+                                Non riscosso
+                            </button>
+                            <button class="btnPrint my-5" type="button" id="modalBtn" data-modal-target="modalScontrino"
+                                data-modal-toggle="modalScontrino">
+                                <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40"
+                                    viewBox="0 -960 960 960" width="40">
+                                    <path
+                                        d="M200-200h360v-200h200v-360H200v560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v400L600-120H200Zm80-280v-80h200v80H280Zm0-160v-80h400v80H280Zm-80 360v-560 560Z" />
+                                </svg>
+                                Scontrino
+                            </button>
+                            <button class="btnPrint" type="button" id="modalBtn" data-modal-target="modalScontrino"
+                                data-modal-toggle="modalScontrino">
+                                <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="40"
+                                    viewBox="0 -960 960 960" width="40">
+                                    <path
+                                        d="M200-200h360v-200h200v-360H200v560Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v400L600-120H200Zm80-280v-80h200v80H280Zm0-160v-80h400v80H280Zm-80 360v-560 560Z" />
+                                </svg>
+                                Preconto
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="w-4/12 p-4 flex flex-col justify-between overflow-y-auto text-white">
+            <!-- <div class="w-4/12 p-4 flex flex-col justify-between overflow-y-auto text-white">
                 <div class="flex justify-end">
                     <button class="rounded-lg p-2 bg-red-600 hover:bg-red-500 active:bg-red-700" id="btnClose">
                         <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
@@ -715,22 +775,6 @@
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg>
                     </button>
-                </div>
-                <div class="w-80 flex justify-center mb-5 mx-auto">
-                    <div>
-                        <p class="text-gray-800 mb-3">Inserisci sconto</p>
-                        <div class="text-center flex flex-wrap">
-                            <input type="text" class="p-2 border border-stone-800 rounded-lg focus:outline-0 text-stone-800">
-                            <div class="px-2">
-                                <button class="btnPrint bg-green-600 hover:bg-green-500 active:bg-green-700" type="button"
-                                    id="modalBtn" data-modal-target="modalScontrino" data-modal-toggle="modalScontrino">
-                                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30">
-                                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div>
                     <button class="btnPrint bg-red-600 hover:bg-red-500 active:bg-red-700" type="button" id="modalBtn"
@@ -756,7 +800,7 @@
                         Preconto
                     </button>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="modalScontrino.js"></script>
